@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+python-multipart
+opencv-python
+openai-whisper
+groq
+chromadb
+pydantic
+python-dotenv
+aiofiles
+numpy
+Pillow
+ffmpeg-python

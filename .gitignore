@@ -1,0 +1,32 @@
+# Environment
+backend/.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Uploads and generated files (don't commit patient data)
+backend/uploads/
+backend/chroma_db/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Whisper model cache (large)
+~/.cache/whisper/
+
+# Sample videos (usually too large for git)
+sample_videos/*.mp4
+sample_videos/*.mov
+sample_videos/*.avi

@@ -80,6 +80,13 @@ def analyze_frames(frames_info: List[dict]) -> List[FrameAnalysis]:
             err = str(e)
             print(f"[Vision] Error on frame {i+1}: {err[:120]}")
 
+            # Auth failure — no point retrying remaining frames, bail out immediately
+            if "401" in err or "invalid_api_key" in err.lower() or "authentication" in err.lower():
+                print("[Vision] Invalid API key — switching all remaining frames to audio-only.")
+                for rem in frames_info[i:]:
+                    results.append(_placeholder(rem))
+                break
+
             if "rate_limit" in err.lower() or "429" in err:
                 print("[Vision] Rate limit hit — switching remaining frames to audio-only.")
                 for rem in frames_info[i:]:

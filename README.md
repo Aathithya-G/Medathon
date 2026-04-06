@@ -21,7 +21,7 @@ Surgery Video → Frame Extraction → Gemini Vision (per frame) → Phase Group
 - Python 3.11+
 - Node.js 18+
 - FFmpeg → `brew install ffmpeg` (Mac) or `sudo apt install ffmpeg` (Linux)
-- A free Gemini API key → https://aistudio.google.com/app/apikey
+- A free Groq API key → https://console.groq.com/keys
 
 ### 1. Backend Setup
 ```bash
@@ -48,9 +48,9 @@ npm run dev
 ```
 
 ### 3. Get a Sample Video
-Search YouTube for "knee arthroscopy educational" and download a 3–5 min clip,
-or use any arthroscopy video you have access to.
+The sample video is in sample_videos(Medathon/sample_videos/aathi .mp4)
 
+The source of the video  -- https://www.youtube.com/watch?v=wwZM3TWj6bw
 ---
 
 ## Project Structure

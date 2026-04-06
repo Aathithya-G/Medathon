@@ -27,6 +27,5 @@ Thumbs.db
 ~/.cache/whisper/
 
 # Sample videos (usually too large for git)
-sample_videos/*.mp4
 sample_videos/*.mov
 sample_videos/*.avi
